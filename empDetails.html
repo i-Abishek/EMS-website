@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Employee Details</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo"><a href="#">Brimma</a></h1>
+      <ul class="main-nav">
+        <li><a href="#">Master</a></li>
+        <li><a href="empDetails.html">Employee Details</a></li>
+        <li><a href="leave.html">Leave Details</a></li>
+        <li><a href="loan.html">Loan</a></li>
+        <li><a href="salary.html">Salary</a></li>
+        <li><a href="login.html">Logout</a></li>
+      </ul>
+    </header>
+    <h2 id="empdetails">Employee Details</h2>
+    <form id="emp">
+      <div class="employeeDetails">
+        <fieldset>
+          <table>
+            <tr>
+              <td>Email:</td>
+              <td>
+                <input type="email" name="email" id="user" required />
+              </td>
+              <td>Address:</td>
+              <td>
+                <textarea
+                  name="address"
+                  id="address"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>Contact 1:</td>
+              <td>
+                <input type="tel" name="mobile" id="user" required />
+              </td>
+              <td>Contact 2:</td>
+              <td>
+                <input type="tel" name="mobile" id="user" required />
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+    </form>
+    <div class="btn">
+      <button type="submit">Submit</button>
+      <button type="submit">Refresh</button>
+      <button type="submit">Save</button>
+    </div>
+  </body>
+</html>
