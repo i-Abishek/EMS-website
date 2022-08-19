@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+}
+
+fieldset {
+    border-radius: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+h2,
+h3,
+a {
+    color: #303d5c;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+.logo {
+    margin: 0;
+    font-size: 1.45em;
+}
+
+
+
+.logo a,
+.main-nav a {
+    padding: 10px 15px;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+}
+
+.main-nav a {
+    font-family: 'Rubik';
+    display: inline-block;
+    position: relative;
+    color: #000000;
+}
+
+.main-nav a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    top: 33px;
+    background-color: #ff7d51;
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-in;
+}
+
+.main-nav a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+
+
+.header {
+    position: sticky;
+    top: 0;
+    padding-top: .2em;
+    padding-bottom: .2em;
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 769px) {
+
+    .header,
+    .main-nav {
+        display: flex;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1150px;
+    }
+}
+
+
+
+@media (min-width: 1025px) {
+    .header {
+        flex-direction: row;
+
+        justify-content: space-between;
+    }
+
+}
+
+/*Personal Details*/
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+td {
+    padding-left: 80px;
+}
+
+.officialdetails td {
+    text-align: center;
+}
+
+.btn {
+    text-align: center;
+
+    font-size: 30px;
+}
+
+.p-details h2 {
+    text-align: center;
+}
+
+.officialdetails h2 {
+    text-align: center;
+}
+
+#empdetails {
+    text-align: center;
+}
+
+.salaryinfo table {
+    width: max-content;
+    height: 30px;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+.salaryinfo td {
+    text-align: center;
+    width: max-content;
+    height: 30px;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
+
+.salaryinfo th {
+    text-align: center;
+    width: max-content;
+    height: 30px;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+}
